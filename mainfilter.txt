@@ -1,7 +1,7 @@
 ! Title: HiSkyZen's Compat 'n' UtilKit — Main Filter
 ! Description: Microsoft Edge/Copilot compatibility exceptions and miscellaneous website fixes for AdGuard network filtering.
-! Version: 2026.1109.1
-! TimeUpdated: 2026-11-09T14:02:00+00:00
+! Version: 2026.1109.2
+! TimeUpdated: 2026-11-09T15:12:00+00:00
 ! Expires: 1 day
 ! Homepage: https://github.com/HiSkyZen/AG-CompatUtilKit
 ! License: https://github.com/HiSkyZen/AG-CompatUtilKit/blob/main/LICENSE
