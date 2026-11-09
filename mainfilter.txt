@@ -1,0 +1,118 @@
+! Title: HiSkyZen's Compat'n'UtilKit — Main Filter
+! Description: Microsoft Edge/Copilot compatibility exceptions and miscellaneous website fixes for AdGuard network filtering.
+! Version: 2026.1109.0
+! TimeUpdated: 2026-11-09T14:02:00+00:00
+! Expires: 1 day (update frequency; applies to filter subscriptions only)
+! Homepage: https://github.com/HiSkyZen/CompatUtilKit
+! License: https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE
+
+! Microsoft Edge & Copilot: allow matching traffic and disable Stealth Mode / cookie & parameter changes
+! Domain matches include subdomains. NOTE: DOES NOT bypass HTTPS interception or DNS protection.
+! Broad allowlist; can also allow telemetry / ads and other services on shared provider domains.
+
+@@||microsoft.com^$important
+@@||cloud.microsoft^$important
+@@||static.microsoft^$important
+@@||microsoftusercontent.com^$important
+@@||microsoftapp.net^$important
+@@||microsoftonline.com^$important
+@@||office.com^$important
+@@||office.net^$important
+@@||live.com^$important
+@@||msauth.net^$important
+@@||msftauth.net^$important
+@@||msauthimages.net^$important
+@@||msftauthimages.net^$important
+@@||login.windows.net^$important
+@@||bing.com^$important
+@@||bing.net^$important
+@@||bingapis.com^$important
+@@||msn.com^$important
+@@||msn.cn^$important
+@@||microsoftstart.com^$important
+@@||microsoftstart.cn^$important
+@@||s-microsoft.com^$important
+@@||msedge.net^$important
+@@||msecnd.net^$important
+@@||microsoftedge.com^$important
+@@||azureedge.net^$important
+@@||azurefd.net^$important
+@@||aka.ms^$important
+@@||cr.m365copilotapp.svc.cloud.microsoft^$important
+@@||copilot.cloud.microsoft^$important
+@@||functional.events.data.microsoft.com^$important
+@@||events.data.microsoft.com^$important
+@@||res.public.onecdn.static.microsoft^$important
+@@||config.edge.skype.com^$important
+@@||dl.delivery.mp.microsoft.com^$important
+@@||img-s-msn-com.akamaized.net^$important
+@@||img-prod-cms-rt-microsoft-com.akamaized.net^$important
+@@||prod-video-cms-amp-microsoft-com.akamaized.net^$important
+@@||prod-streaming-video-msn-com.akamaized.net^$important
+@@||wus-streaming-video-msn-com.akamaized.net^$important
+@@||copilotexplore.azurewebsites.net^$important
+@@||zerocodecms.blob.core.windows.net^$important
+@@||oneservice-pme-signalr-wus-b.service.signalr.net^$important
+
+! Disable Tracking Protection, including DPI modifications, and cookie/parameter filtering for these requests
+@@||microsoft.com^$stealth,removeparam,cookie
+@@||cloud.microsoft^$stealth,removeparam,cookie
+@@||static.microsoft^$stealth,removeparam,cookie
+@@||microsoftusercontent.com^$stealth,removeparam,cookie
+@@||microsoftapp.net^$stealth,removeparam,cookie
+@@||microsoftonline.com^$stealth,removeparam,cookie
+@@||office.com^$stealth,removeparam,cookie
+@@||office.net^$stealth,removeparam,cookie
+@@||live.com^$stealth,removeparam,cookie
+@@||msauth.net^$stealth,removeparam,cookie
+@@||msftauth.net^$stealth,removeparam,cookie
+@@||msauthimages.net^$stealth,removeparam,cookie
+@@||msftauthimages.net^$stealth,removeparam,cookie
+@@||login.windows.net^$stealth,removeparam,cookie
+@@||bing.com^$stealth,removeparam,cookie
+@@||bing.net^$stealth,removeparam,cookie
+@@||bingapis.com^$stealth,removeparam,cookie
+@@||msn.com^$stealth,removeparam,cookie
+@@||msn.cn^$stealth,removeparam,cookie
+@@||microsoftstart.com^$stealth,removeparam,cookie
+@@||microsoftstart.cn^$stealth,removeparam,cookie
+@@||s-microsoft.com^$stealth,removeparam,cookie
+@@||msedge.net^$stealth,removeparam,cookie
+@@||msecnd.net^$stealth,removeparam,cookie
+@@||microsoftedge.com^$stealth,removeparam,cookie
+@@||azureedge.net^$stealth,removeparam,cookie
+@@||azurefd.net^$stealth,removeparam,cookie
+@@||aka.ms^$stealth,removeparam,cookie
+@@||cr.m365copilotapp.svc.cloud.microsoft^$stealth,removeparam,cookie
+@@||copilot.cloud.microsoft^$stealth,removeparam,cookie
+@@||functional.events.data.microsoft.com^$stealth,removeparam,cookie
+@@||events.data.microsoft.com^$stealth,removeparam,cookie
+@@||res.public.onecdn.static.microsoft^$stealth,removeparam,cookie
+@@||config.edge.skype.com^$stealth,removeparam,cookie
+@@||dl.delivery.mp.microsoft.com^$stealth,removeparam,cookie
+@@||img-s-msn-com.akamaized.net^$stealth,removeparam,cookie
+@@||img-prod-cms-rt-microsoft-com.akamaized.net^$stealth,removeparam,cookie
+@@||prod-video-cms-amp-microsoft-com.akamaized.net^$stealth,removeparam,cookie
+@@||prod-streaming-video-msn-com.akamaized.net^$stealth,removeparam,cookie
+@@||wus-streaming-video-msn-com.akamaized.net^$stealth,removeparam,cookie
+@@||copilotexplore.azurewebsites.net^$stealth,removeparam,cookie
+@@||zerocodecms.blob.core.windows.net^$stealth,removeparam,cookie
+@@||oneservice-pme-signalr-wus-b.service.signalr.net^$stealth,removeparam,cookie
+
+! Disable page-level content/cosmetic filtering on relevant entry points
+@@||copilot.microsoft.com^$document,important
+@@||copilot.cloud.microsoft^$document,important
+@@||edge.microsoft.com^$document,important
+@@||ntp.msn.com^$document,important
+@@||www.msn.com^$document,important
+@@||www.bing.com^$document,important
+@@||edgeservices.bing.com^$document,important
+@@||m365.cloud.microsoft^$document,important
+
+! Simple Fixes
+||messenger.com^$removeparam=pwa
+||messenger.com^$removeparam=__pwa
+@@$stealth=dpi,domain=app.link|startpage.com|kurly.com|nid.naver.com|ses.signgate.com|onelink.me
+@@||ourhome.co.kr^$stealth=dpi
+@@||isplus.*^$stealth=dpi
+chatgpt.com##[data-testid="thread-disclaimer"]

@@ -1,0 +1,75 @@
+{
+  "project": "HiSkyZen's Compat'n'UtilKit",
+  "release_version": "2026.1109.0",
+  "updated_at": "2026-11-09T14:02:00+00:00",
+  "homepage": "https://github.com/HiSkyZen/CompatUtilKit",
+  "license": "https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE",
+  "origin_archive": "AG-CompatUtilKit.zip",
+  "files": {
+    "mainfilter.txt": {
+      "title": "HiSkyZen's Compat'n'UtilKit — Main Filter",
+      "description": "Microsoft Edge/Copilot compatibility exceptions and miscellaneous website fixes for AdGuard network filtering.",
+      "format": "AdGuard network filter",
+      "destination": "Ad Blocking > Custom Filters (import local TXT or subscribe by URL)",
+      "entries": 100,
+      "version": "2026.1109.0",
+      "time_updated": "2026-11-09T14:02:00+00:00",
+      "expires": "1 day (subscription filters; not meaningful for manually applied exclusions)",
+      "homepage": "https://github.com/HiSkyZen/CompatUtilKit",
+      "license": "https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE",
+      "sha256": "f1760a94e6de497d5318717dd17957eb83f17a8173ff9194f98dab4ebf146e10"
+    },
+    "fl.txt": {
+      "title": "HiSkyZen's Compat'n'UtilKit — Lover938 Optional Fixes",
+      "description": "Optional lover938.net resource blocks, scriptlets and JavaScript rules. Do NOT enable in AdGuard for Windows or Android per original source warning. Trusted filters may be required.",
+      "format": "AdGuard network filter (optional, trusted)",
+      "destination": "Supported AdGuard browser-extension filters ONLY; do not enable in Windows or Android apps",
+      "entries": 15,
+      "version": "2026.1109.0",
+      "time_updated": "2026-11-09T14:02:00+00:00",
+      "expires": "1 day (subscription filters; not meaningful for manually applied exclusions)",
+      "homepage": "https://github.com/HiSkyZen/CompatUtilKit",
+      "license": "https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE",
+      "sha256": "1abc4d39c9977f4c40b8c71a5d13304d5adf1c5e86f6e49b93fcb7b1e5a1d8a6"
+    },
+    "HTTPSexclusions.txt": {
+      "title": "HiSkyZen's Compat'n'UtilKit — HTTPS Exclusions",
+      "description": "Domain exceptions to HTTPS inspection/interception (includes subdomains); not a network-filter subscription.",
+      "format": "AdGuard HTTPS exclusions (domain list with # comments)",
+      "destination": "AdGuard for Windows > Settings > Network settings > HTTPS filtering > Exclusions",
+      "entries": 43,
+      "version": "2026.1109.0",
+      "time_updated": "2026-11-09T14:02:00+00:00",
+      "expires": "1 day (subscription filters; not meaningful for manually applied exclusions)",
+      "homepage": "https://github.com/HiSkyZen/CompatUtilKit",
+      "license": "https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE",
+      "sha256": "583483b1e510bc35a5501bdb221d9f30a190a220d1bec48d233d814f2e098b03"
+    },
+    "dnsfilter.txt": {
+      "title": "HiSkyZen's Compat'n'UtilKit — DNS Allowlist Filter",
+      "description": "AdGuard DNS-filtering exception rules for Microsoft domains; does NOT bypass the configured DNS server. Use DNSexclusions.txt for resolver bypass.",
+      "format": "AdGuard DNS allowlist filter",
+      "destination": "AdGuard DNS Protection > DNS filters > Import custom filter",
+      "entries": 43,
+      "version": "2026.1109.0",
+      "time_updated": "2026-11-09T14:02:00+00:00",
+      "expires": "1 day (subscription filters; not meaningful for manually applied exclusions)",
+      "homepage": "https://github.com/HiSkyZen/CompatUtilKit",
+      "license": "https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE",
+      "sha256": "98ca06d38e1b75bf57866faf48752e526dc8ad2392d8cb8cd2529e1eb9f45075"
+    },
+    "DNSexclusions.txt": {
+      "title": "HiSkyZen's Compat'n'UtilKit — DNS Exclusions",
+      "description": "Bare domain list for AdGuard for Windows advanced DNS exclusions; uses system resolver instead of configured AdGuard DNS. No inline comments for maximum import compatibility.",
+      "format": "AdGuard for Windows DNS exclusions (domain-only)",
+      "destination": "AdGuard for Windows > Settings > App settings > Advanced settings > DNS exclusions",
+      "entries": 43,
+      "version": "2026.1109.0",
+      "time_updated": "2026-11-09T14:02:00+00:00",
+      "expires": "1 day (subscription filters; not meaningful for manually applied exclusions)",
+      "homepage": "https://github.com/HiSkyZen/CompatUtilKit",
+      "license": "https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE",
+      "sha256": "f0f59422d598012e380e7172d55773da8ef68f7e75dda475f3cb968e4bfb50eb"
+    }
+  }
+}
