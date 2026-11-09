@@ -1,10 +1,10 @@
-! Title: HiSkyZen's Compat'n'UtilKit — Main Filter
+! Title: HiSkyZen's Compat 'n' UtilKit — Main Filter
 ! Description: Microsoft Edge/Copilot compatibility exceptions and miscellaneous website fixes for AdGuard network filtering.
-! Version: 2026.1109.0
+! Version: 2026.1109.1
 ! TimeUpdated: 2026-11-09T14:02:00+00:00
-! Expires: 1 day (update frequency; applies to filter subscriptions only)
-! Homepage: https://github.com/HiSkyZen/CompatUtilKit
-! License: https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE
+! Expires: 1 day
+! Homepage: https://github.com/HiSkyZen/AG-CompatUtilKit
+! License: https://github.com/HiSkyZen/AG-CompatUtilKit/blob/main/LICENSE
 
 ! Microsoft Edge & Copilot: allow matching traffic and disable Stealth Mode / cookie & parameter changes
 ! Domain matches include subdomains. NOTE: DOES NOT bypass HTTPS interception or DNS protection.

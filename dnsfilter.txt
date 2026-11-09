@@ -1,10 +1,10 @@
-! Title: HiSkyZen's Compat'n'UtilKit — DNS Allowlist Filter
-! Description: AdGuard DNS-filtering exception rules for Microsoft domains; does NOT bypass the configured DNS server. Use DNSexclusions.txt for resolver bypass.
-! Version: 2026.1109.0
+! Title: HiSkyZen's Compat 'n' UtilKit — DNS Allowlist Filter
+! Description: DNS-level allowlist exceptions for the original Microsoft-related domains. This does not bypass the configured DNS resolver.
+! Version: 2026.1109.1
 ! TimeUpdated: 2026-11-09T14:02:00+00:00
-! Expires: 1 day (update frequency; applies to filter subscriptions only)
-! Homepage: https://github.com/HiSkyZen/CompatUtilKit
-! License: https://github.com/HiSkyZen/CompatUtilKit/blob/master/LICENSE
+! Expires: 1 day
+! Homepage: https://github.com/HiSkyZen/AG-CompatUtilKit
+! License: https://github.com/HiSkyZen/AG-CompatUtilKit/blob/main/LICENSE
 
 ! DNS allowlisting; differs from DNS resolver bypass.
 @@||microsoft.com^
