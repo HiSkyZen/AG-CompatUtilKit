@@ -8,7 +8,7 @@ License: https://github.com/HiSkyZen/AG-CompatUtilKit/blob/master/LICENSE
 ## 무엇을 어디에 적용해야 하나
 
 | 파일 | 종류 | 적용 위치 |
-|---|---|---|---|
+|---|---|---|
 | `mainfilter.txt` | AdGuard 일반 네트워크 필터 | 광고 차단 → 사용자 지정 필터로 TXT 가져오기 |
 | `fl.txt` | 별도 선택형 웹사이트 필터 | 지원되는 환경의 신뢰 가능한 사용자 지정 필터 (Windows/Android **사용 금지**) |
 | `HTTPSexclusions.txt` | HTTPS 검사 예외 목록 | 앱 설정 → 네트워크 설정 → HTTPS 필터링 → 제외 목록 |
