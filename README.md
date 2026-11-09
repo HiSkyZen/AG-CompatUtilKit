@@ -13,8 +13,8 @@ AdGuard 호환성·사용자 수정 필터와 Microsoft 관련 HTTPS/DNS 예외 
 |---|---|---|
 | `mainfilter.txt` | AdGuard 일반 네트워크 필터 | 광고 차단 → 사용자 지정 필터로 TXT 가져오기 |
 | `fl.txt` | 별도 선택형 웹사이트 필터 | 지원되는 환경의 신뢰 가능한 사용자 지정 필터 (Windows/Android **사용 금지**) |
-| `HTTPSexclusions.txt` | HTTPS 검사 예외 목록 | 앱 설정 → 네트워크 설정 → HTTPS 필터링 → 제외 목록 |
-| `HTTPSexclusions.adgdomains` | **AdGuard for Windows 네이티브 HTTPS 제외 목록** | 네트워크 설정 → HTTPS 필터링 → 제외 목록 → 가져오기 |
+| `HTTPSexclusions.txt` | HTTPS 검사 예외 목록 | 앱 설정 → 네트워크 설정 → HTTPS 필터링 → 제외 목록에 추가 |
+| `HTTPSexclusions.adgdomains` | **AdGuard for Windows 8 기본 HTTPS 제외 목록에 병합된 리스트** | 네트워크 설정 → HTTPS 필터링 → 제외 목록 → 가져오기 |
 | `dnsfilter.txt` | **DNS 필터**: 차단 예외 (allowlist) | DNS 보호 → DNS 필터 → 필터 가져오기 |
 | `DNSexclusions.txt` | **DNS 서버 우회**: 시스템 DNS로 전환 | 앱 설정 → 고급 설정 → DNS 제외 목록 |
 
