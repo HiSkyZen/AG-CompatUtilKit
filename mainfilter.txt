@@ -207,3 +207,25 @@ chatgpt.com##[data-testid="thread-disclaimer"]
 @@||hanacard.co.kr^$stealth=dpi
 @@||wooricard.com^$stealth=dpi
 @@||card.nonghyup.com^$stealth=dpi
+
+! NAVER - Core services
+@@||naver.com^$stealth=dpi
+@@||naver.net^$stealth=dpi
+@@||naver.me^$stealth=dpi
+@@||naver.jp^$stealth=dpi
+
+! NAVER - Static resources, CDN and infrastructure
+@@||pstatic.net^$stealth=dpi
+@@||ndash.net^$stealth=dpi
+@@||nheos.com^$stealth=dpi
+@@||naverblogwidget.com^$stealth=dpi
+
+! NAVER - Corporate and affiliated services
+@@||navercorp.com^$stealth=dpi
+@@||naverlabs.com^$stealth=dpi
+@@||band.us^$stealth=dpi
+@@||webtoons.com^$stealth=dpi
+
+! NAVER - Cloud infrastructure
+@@||ncloud.com^$stealth=dpi
+@@||ntruss.com^$stealth=dpi
